@@ -1,4 +1,4 @@
-import * as fs from 'fs'
+import * as fs from "fs";
 
 interface City {
   name: string;
@@ -8,21 +8,22 @@ interface City {
 interface Weather {
   zipCode: string;
   weather: string;
+  id: number;
 }
 
 let cities: City[] = [
   {
-    name: 'Dijon',
-    zipCode: '21000'
+    name: "Dijon",
+    zipCode: "21000",
   },
   {
-    name: 'Besançon',
-    zipCode: '25000'
+    name: "Besançon",
+    zipCode: "25000",
   },
   {
-    name: 'Paris',
-    zipCode: '75001'
-  }
+    name: "Paris",
+    zipCode: "75001",
+  },
 ];
 
 let weather: Weather[] = [];
@@ -30,16 +31,15 @@ let weather: Weather[] = [];
 function saveWeatherData() {
   let finalJson = JSON.stringify({
     cities: cities,
-    weather: weather
+    weather: weather,
   });
 
-  fs.writeFile('user.json', finalJson, (err) => {
-
-      if (err) {
-          console.log('Error writing file:', err);
-      } else {
-          console.log('Successfully wrote file');
-      }
+  fs.writeFile("user.json", finalJson, (err) => {
+    if (err) {
+      console.log("Error writing file:", err);
+    } else {
+      console.log("Successfully wrote file");
+    }
   });
 }
 

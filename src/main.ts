@@ -84,6 +84,27 @@ server.delete("/cities/:zipCode", (req, res) => {
   }
 });
 
+server.delete("/weather/:id", (req, res) => {
+  const index = weather.findIndex((t) => t.id === parseInt(req.params.id));
+
+  isValidMethod(req, res, "DELETE");
+
+  if (index !== -1) {
+    weather.splice(index, 1);
+
+    if (weather.length === 0) {
+      res.status(204);
+      res.end();
+    }
+
+    res.status(200).send({
+      status: "success",
+    });
+  } else {
+    res.status(404).send({ error: "Contact not found" });
+  }
+});
+
 server.listen(3000, () => {
   console.log(`Server running on port 3000`);
 });
