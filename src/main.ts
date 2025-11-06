@@ -45,16 +45,39 @@ server.get("/cities/:zipCode/weather", (req, res) => {
     res.end();
   }
 
-  let findWeather = weather.find(
-    (weather) => weather.zipCode === req.params.zipCode,
-  );
+  let findWeatherReports = weather.filter((item) => item.zipCode === req.params.zipCode);
 
-  if (!findWeather) {
+  if (findWeatherReports.length < 0) {
     res.status(404).json({ error: "No weather data found" });
     res.end();
   }
 
-  res.status(200).json(findWeather);
+  // Calcule du score sur tous les rapport de la ville pour "pluie"|"beau"|"neige"
+  let score: number[] = [0, 0, 0]
+
+  const weathers = [
+    "pluie",
+    "beau",
+    "neige"
+  ]
+
+  for(let i = 0; i < findWeatherReports.length; i++){
+    if(findWeatherReports[i].weather === "pluie"){
+      score[0]++;
+    } else if(findWeatherReports[i].weather === "beau"){
+      score[1]++;
+    } else if(findWeatherReports[i].weather === "neige"){
+      score[2]++;
+    }
+  }
+
+  const indexMaxScore = score.findIndex(i => i ===  score.reduce((m, n) => Math.max(m, n)))
+
+  res.status(200).json({
+    zipCode: req.params.zipCode,
+    cityName: findCity?.name,
+    weather: weathers[indexMaxScore]
+  });
 });
 
 server.get("/weather", (req, res) => {

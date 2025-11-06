@@ -26,7 +26,33 @@ let cities: City[] = [
   },
 ];
 
-let weather: Weather[] = [];
+let weather: Weather[] = [
+  {
+    id: 1,
+    zipCode: "21000",
+    weather: "pluie",
+  },
+  {
+    id: 2,
+    zipCode: "21000",
+    weather: "pluie",
+  },
+  {
+    id: 3,
+    zipCode: "21000",
+    weather: "beau",
+  },
+  {
+    id: 4,
+    zipCode: "21000",
+    weather: "neige",
+  },
+  {
+    id: 5,
+    zipCode: "21000",
+    weather: "pluie",
+  },
+];
 
 function saveWeatherData() {
   let finalJson = JSON.stringify({
