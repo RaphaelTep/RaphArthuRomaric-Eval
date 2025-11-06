@@ -31,6 +31,26 @@ server.get('/cities/:zipCode', (req, res) => {
   res.status(200).json(findCity);
 });
 
+server.get('/cities/:zipCode/weather', (req, res) => {
+  isValidMethod(req, res, 'GET');
+
+  let findCity = cities.find(city => city.zipCode === req.params.zipCode);
+
+  if(!findCity){
+    res.status(404).json({ error: 'City not found' });
+    res.end();
+  }
+
+  let findWeather = weather.find(weather => weather.zipCode === req.params.zipCode);
+
+  if(!findWeather){
+    res.status(404).json({ error: 'No weather data found' });
+    res.end();
+  }
+
+  res.status(200).json(findWeather);
+});
+
 
 server.listen(3000, () => {
   console.log(`Server running on port 3000`);
