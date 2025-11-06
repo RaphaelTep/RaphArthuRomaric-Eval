@@ -61,9 +61,27 @@ server.get("/weather", (req, res) => {
   res.status(200).json(weather);
 });
 
+server.post('/cities', (req, res) => {
+  isValidMethod(req, res, 'POST');
+
+  const body = req.body;
+
+  if(
+    (body?.zipCode && typeof body?.zipCode === 'string') &&
+    (body?.name && typeof body?.name === 'string')
+  ){
+    cities.push(body);
+    res.status(201).json(body);
+    res.end();
+  } else {
+    res.status(400).json({ error: 'Invalid request body' });
+    res.end();
+  }
+});
+
 server.delete("/cities/:zipCode", (req, res) => {
   const index = cities.findIndex(
-    (t) => t.zipCode === parseInt(req.params.zipCode),
+    (t) => t.zipCode === req.params.zipCode,
   );
 
   isValidMethod(req, res, "DELETE");
