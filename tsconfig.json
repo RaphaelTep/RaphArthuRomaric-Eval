@@ -4,6 +4,7 @@
     "target": "esnext",
     "module": "esnext",
     "removeComments": true,
+    "moduleResolution": "bundler",
     "noEmitOnError": true,
     "strict": true
   },
