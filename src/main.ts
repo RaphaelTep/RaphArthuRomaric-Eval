@@ -51,6 +51,9 @@ server.get('/cities/:zipCode/weather', (req, res) => {
   res.status(200).json(findWeather);
 });
 
+server.get('/weather', (req, res) => {
+  res.status(200).json(weather);
+});
 
 server.listen(3000, () => {
   console.log(`Server running on port 3000`);
