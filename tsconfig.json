@@ -7,14 +7,14 @@
     "moduleResolution": "bundler",
     "rootDir": "./src",
     "esModuleInterop": true,
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmitOnError": true,
-    "strict": true
+
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

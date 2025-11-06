@@ -1,4 +1,4 @@
-import fs from 'fs';
+import * as fs from 'fs'
 
 interface City {
   name: string;
@@ -10,7 +10,20 @@ interface Weather {
   weather: string;
 }
 
-let cities: City[] = [];
+let cities: City[] = [
+  {
+    name: 'Dijon',
+    zipCode: '21000'
+  },
+  {
+    name: 'Besançon',
+    zipCode: '25000'
+  },
+  {
+    name: 'Paris',
+    zipCode: '75001'
+  }
+];
 
 let weather: Weather[] = [];
 
