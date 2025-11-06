@@ -80,6 +80,37 @@ server.get("/cities/:zipCode/weather", (req, res) => {
   });
 });
 
+server.post("/cities/:zipCode/weather", (req, res) => {
+  isValidMethod(req, res, "POST");
+
+  let findCity = cities.find((city) => city.zipCode === req.params.zipCode);
+
+  if (!findCity) {
+    res.status(404).json({ error: "City not found" });
+    res.end();
+  }
+
+  const body = req.body;
+
+  if(
+    (body?.zipCode && typeof body?.zipCode === 'string') &&
+    (body?.weather && typeof body?.weather === 'string')
+  ){
+    weather.push({
+      ...body,
+      id: weather.length
+    });
+    res.status(201).json({
+      ...body,
+      id: weather.length - 1
+    });
+    res.end();
+  } else {
+    res.status(400).json({ error: 'Invalid request body' });
+    res.end();
+  }
+})
+
 server.get("/weather", (req, res) => {
   res.status(200).json(weather);
 });

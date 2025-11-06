@@ -28,6 +28,11 @@ let cities: City[] = [
 
 let weather: Weather[] = [
   {
+    id: 0,
+    zipCode: "21000",
+    weather: "pluie",
+  },
+  {
     id: 1,
     zipCode: "21000",
     weather: "pluie",
@@ -35,20 +40,15 @@ let weather: Weather[] = [
   {
     id: 2,
     zipCode: "21000",
-    weather: "pluie",
+    weather: "beau",
   },
   {
     id: 3,
     zipCode: "21000",
-    weather: "beau",
-  },
-  {
-    id: 4,
-    zipCode: "21000",
     weather: "neige",
   },
   {
-    id: 5,
+    id: 4,
     zipCode: "21000",
     weather: "pluie",
   },
