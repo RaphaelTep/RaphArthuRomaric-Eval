@@ -133,6 +133,21 @@ server.get("/cities/:zipCode/weather/:weatherId", (req, res) => {
 
 })
 
+server.get("/weather/:weatherId", (req, res) => {
+  isValidMethod(req, res, "GET");
+
+  let findWeather = weather.find((weather) => weather.id === Number(req.params.weatherId));
+
+  if (!findWeather) {
+    res.status(404).json({ error: "Weather not found" });
+    res.end();
+  }
+
+  res.status(200).json(findWeather);
+  res.end();
+
+})
+
 server.get("/weather", (req, res) => {
   res.status(200).json(weather);
 });
