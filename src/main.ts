@@ -101,7 +101,6 @@ server.post("/cities/:zipCode/weather", (req, res) => {
       id: weather.length
     });
     res.status(201).json({
-      ...body,
       id: weather.length - 1
     });
     res.end();
