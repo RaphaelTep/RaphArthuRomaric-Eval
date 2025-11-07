@@ -70,4 +70,4 @@ function saveWeatherData() {
   });
 }
 
-export { cities, weather, saveWeatherData };
+export { cities, weather, saveWeatherData, Weather, City };

@@ -1,6 +1,7 @@
 import { describe, it, expect, beforeAll } from "vitest"
 import { server } from "../main"
 import request from 'supertest'
+import { Weather, City } from "../storage";
 
 let serverTest: any
 const zipCode: string = '21000'
@@ -13,7 +14,7 @@ const newCity: [] = []
 const updateCity: [] = []
 const wrongNewCity: {} = [ { name: "Coda town", zipCode: " " } ]
 const wrongNewWeather: {} = [ { zipCode: " ", weather: " ", id: 9999999 } ]
-const wrongUpdateCity: {} = [ { name: " ", zipCode: "21000" } ]
+const wrongUpdateCity: City = { name: "", zipCode: "21000" }
 
 
 describe('TEST de Stormly', () => {
@@ -102,19 +103,19 @@ describe('TEST de Stormly', () => {
       const req = await request(serverTest)
       .get(`/cities/${wrongZipCode}`)
       .expect(404)
-      .then(res => { expect(res).toEqual({ error: 'City not found' }) })
+      .then(res => { expect(res.body).toEqual({ error: 'City not found' }) })
     })
     it('GET weather report by wrongId /weather/:id', async () => {
       const req = await request(serverTest)
       .get(`/weather/${wrongId}`)
       .expect(404)
-      .then(res => { expect(res).toEqual({ error: 'Weather not found' }) })
+      .then(res => { expect(res.body).toEqual({ error: 'Weather not found' }) })
     })
     it('GET cities weather by wrongZipCode /cities/:zipCode/weather', async () => {
       const req = await request(serverTest)
       .get(`/cities/${wrongZipCode}/weather`)
       .expect(404)
-      .then(res => { expect(res).toEqual({ error: 'City not found' }) })
+      .then(res => { expect(res.body).toEqual({ error: 'City not found' }) })
     })
     it('GET cities weather by zipCode with 0 data found /cities/:zipCode/weather', async () => {
       const req = await request(serverTest)
@@ -150,7 +151,7 @@ describe('TEST de Stormly', () => {
       .post(`/cities/${zipCode}/weather`)
       .send(wrongNewWeather)
       .expect(400)
-      .then(res => { expect(res).toEqual({ error: 'Invalid request body' }) })})
+      .then(res => { expect(res.body).toEqual({ error: 'Invalid request body' }) })})
     it('PUT city by wrongZipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
       .post(`/cities/${wrongZipCode}`)
