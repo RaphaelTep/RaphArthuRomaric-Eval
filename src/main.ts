@@ -107,8 +107,9 @@ server.post("/cities/:zipCode/weather", (req, res) => {
       id: weather.length,
     });
     res.status(201).json({
-      id: weather.length - 1
+      id: weather.length - 1,
     });
+    logger.info(`New weather report added : ${JSON.stringify(body)}`);
     res.end();
   } else {
     res.status(400).json({ error: "Invalid request body" });
@@ -183,6 +184,7 @@ server.post("/cities", (req, res) => {
   ) {
     cities.push(body);
     res.status(201).json(body);
+    logger.info(`New city added : ${JSON.stringify(body)}`);
     res.end();
   } else {
     res.status(400).json({ error: "Invalid request body" });
@@ -206,6 +208,9 @@ server.delete("/cities/:zipCode", (req, res) => {
     res.status(200).send({
       status: "success",
     });
+    logger.info(
+      `deleted city : ${JSON.stringify({ zipCode: req.params.zipCode, name: cities.name })}`,
+    );
   } else {
     res.status(404).send({ error: "Contact not found" });
   }
@@ -227,6 +232,8 @@ server.delete("/weather/:id", (req, res) => {
     res.status(200).send({
       status: "success",
     });
+    logger.info(`weather report deleted: ${JSON.stringify(weather)}
+
   } else {
     res.status(404).send({ error: "Contact not found" });
   }
@@ -243,6 +250,7 @@ server.put("/cities/:zipCode", (req, res) => {
         zipCode: req.params.zipCode,
         name: req.body.name,
       };
+      logger.info(`City edited: ${JSON.stringify(body)}`);
       res.status(201).json(cities[index]);
     } else {
       res
