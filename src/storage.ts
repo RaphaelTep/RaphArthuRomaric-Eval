@@ -25,6 +25,10 @@ let cities: City[] = [
     name: "Paris",
     zipCode: "75001",
   },
+  {
+    name: "Coda town",
+    zipCode: "99999",
+  },
 ];
 
 let weather: Weather[] = [

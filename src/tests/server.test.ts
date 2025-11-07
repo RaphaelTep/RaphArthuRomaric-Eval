@@ -121,9 +121,9 @@ describe('TEST de Stormly', () => {
     })
     it('GET cities weather by zipCode with 0 data found /cities/:zipCode/weather', async () => {
       const req = await request(serverTest)
-      .get(`/cities/0/weather`)
+      .get(`/cities/99999/weather`)
       .expect(404)
-      .then(res => { expect(res).toEqual({ error: "No weather data found" }) })
+      .then(res => { expect(res.body).toEqual({ error: "No weather data found" }) })
     })
     it('GET weather report by wrongZipCode /cities/:zipCode/weather/:id', async () => {
       const req = await request(serverTest)
