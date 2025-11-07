@@ -143,7 +143,7 @@ describe('TEST de Stormly', () => {
       .post('/cities')
       .send(wrongNewCity)
       .expect(400)
-      .then(res => { expect(res).toEqual( { error: "Invalid request body" }) })
+      .then(res => { expect(res.body).toEqual( { error: "Invalid request body" }) })
     })
     it('POST weather report by wrongZipCode /cities/:zipCode/weather', async () => {
       const req = await request(serverTest)
