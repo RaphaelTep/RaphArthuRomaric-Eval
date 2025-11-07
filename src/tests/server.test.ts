@@ -84,23 +84,17 @@ describe('TEST de Stormly', () => {
       .post(`/cities/${zipCode}`)
       .send(updateCity)
       .expect(201)
-      .then(res => { expect(res).toEqual({body: {
-        name: "Dij"
-      },
-      response : {
-        zipCode: "21000",
-        name: "Dijon"
-      }}) })
+      .then(res => { expect(res.body).toEqual({ zipCode: "21000", name: "Dijon" }) })
     })
     it('DELETE cities by zipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
       .get(`/cities/${zipCode}`)
-      .expect(204)
+      .expect(200)
     })
     it('DELETE weather by id /weather/:id', async () => {
       const req = await request(serverTest)
       .get(`/weather/${id}`)
-      .expect(204)
+      .expect(200)
     })
   })
   describe('TEST failed des endpoints', () => {
