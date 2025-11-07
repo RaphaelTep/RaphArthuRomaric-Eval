@@ -1,0 +1,114 @@
+{"level":30,"time":"2025-11-07T09:22:33.628Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:22:33.640Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:22:33.646Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:22:33.651Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:33.660Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:22:33.664Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:33.692Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:22:33.697Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:33.700Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:22:33.706Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:22:33.715Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:22:33.719Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:33.724Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:22:33.750Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:22:33.753Z","pid":19116,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:22:44.836Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:22:44.848Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:22:44.852Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:22:44.857Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:44.867Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:22:44.870Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:44.898Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:22:44.902Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:44.906Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:22:44.911Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:22:44.921Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:22:44.926Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:22:44.931Z","pid":7720,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:28:53.951Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:28:53.962Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:28:53.967Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:28:53.972Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:28:53.976Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:28:53.979Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:28:54.007Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:28:54.012Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:28:54.016Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:28:54.025Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:28:54.034Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:28:54.036Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:28:54.042Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:28:54.068Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:28:54.070Z","pid":15312,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:29:12.357Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:29:12.368Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:29:12.373Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:29:12.377Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:12.386Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:29:12.390Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:12.417Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:29:12.421Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:12.425Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:29:12.431Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:29:12.440Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:29:12.443Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:12.449Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:29:12.473Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:29:12.476Z","pid":15656,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:29:17.829Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:29:17.842Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:29:17.848Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:29:17.852Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:17.857Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:29:17.861Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:17.896Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:29:17.901Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:17.905Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:29:17.910Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:29:17.922Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:29:17.925Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:29:17.930Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:29:17.963Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:29:17.966Z","pid":23084,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:30:55.863Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:30:55.876Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:30:55.882Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:30:55.887Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:30:55.892Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:30:55.897Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:30:55.932Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:30:55.937Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:30:55.940Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:30:55.946Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:30:55.958Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:30:55.960Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:30:55.965Z","pid":22512,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:32:25.905Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:32:25.919Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:32:25.924Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:32:25.928Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:25.933Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:32:25.937Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:25.969Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:32:25.973Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:25.979Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:32:25.989Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:32:26.002Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:32:26.006Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:26.010Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:32:26.041Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:32:26.044Z","pid":21672,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:32:54.611Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"}]"}
+{"level":30,"time":"2025-11-07T09:32:54.623Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:32:54.627Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T09:32:54.632Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:54.638Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:32:54.642Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:54.672Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T09:32:54.676Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:54.682Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T09:32:54.691Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":30,"time":"2025-11-07T09:32:54.703Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T09:32:54.706Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T09:32:54.711Z","pid":20596,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}

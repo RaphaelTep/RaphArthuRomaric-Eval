@@ -6,7 +6,7 @@ let serverTest: any
 const zipCode: string = '21000'
 const id: number = 1
 const wrongZipCode: string = '09'
-const id: number = 0
+const id: number = 1
 const wrongId: number = -99
 const newWeather: [] = []
 const newCity: [] = []
