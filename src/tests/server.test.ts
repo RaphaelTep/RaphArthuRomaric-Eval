@@ -4,8 +4,7 @@ import request from 'supertest'
 import { Weather, City } from "../storage";
 
 let serverTest: any
-const zipCode: string = '21000'
-const id: number = 1
+const zipCode: string = "21000"
 const wrongZipCode: string = '09'
 const id: number = 1
 const wrongId: number = -99
@@ -25,60 +24,83 @@ describe('TEST de Stormly', () => {
 
   describe('TEST success des endpoints', () => {
     it('GET /cities', async () => {
-        const req = await request(serverTest)
-        .get("/cities")
-        .expect(200)
-        .then(res => { expect(res.body[0]).toEqual({ name: 'Dijon', zipCode: '21000' }) })
+      const req = await request(serverTest)
+      .get("/cities")
+      .expect(200)
+      .then(res => { expect(res.body[0]).toEqual({ name: 'Dijon', zipCode: '21000' }) })
     })
     it('GET cities by zipCode /cities/:zipCode', async () => {
-        const req = await request(serverTest)
-        .get(`/cities/${zipCode}`)
-        .expect(200)
-        .then(res => { expect(res.body).toEqual({ name: 'Dijon', zipCode: '21000' }) })
+      const req = await request(serverTest)
+      .get(`/cities/${zipCode}`)
+      .expect(200)
+      .then(res => { expect(res.body).toEqual({ name: 'Dijon', zipCode: '21000' }) })
     })
     it('GET /weather', async () => {
-        const req = await request(serverTest)
-        .get("/weather")
-        .expect(200)
-        .then(res => { expect(res.body[0]).toEqual({
-          id: 1,
-          zipCode: "21000",
-          townName: "Dijon",
-          weather: "neige"
-        }) })
+      const req = await request(serverTest)
+      .get("/weather")
+      .expect(200)
+      .then(res => { expect(res.body[0]).toEqual({
+        id: 0,
+        zipCode: "21000",
+        townName: "Dijon",
+        weather: "pluie"
+      }) })
     })
     it('GET weather report by id /weather/:id', async () => {
-        const req = await request(serverTest)
-        .get(`/weather/${id}`)
-        .expect(200)
-        .then(res => { expect(res.body).toEqual({
-          id: 1,
-          zipCode: "21000",
-          townName: "Dijon",
-          weather: "neige"
-        }) })
+      const req = await request(serverTest)
+      .get(`/weather/${id}`)
+      .expect(200)
+      .then(res => { expect(res.body).toEqual({
+        id: 1,
+        zipCode: "21000",
+        townName: "Dijon",
+        weather: "pluie"
+      }) })
     })
     it('GET cities weather by zipCode /cities/:zipCode/weather', async () => {
-        const req = await request(serverTest)
-        .get(`/cities/${zipCode}/weather`)
-        .expect(200)
-        .then(res => { expect(res.body).toEqual({
-          id: 1,
-          zipCode: '21000',
-	        townName: 'Dijon',
-          weather: "neige"
-        }) })
+      const req = await request(serverTest)
+      .get(`/cities/${zipCode}/weather`)
+      .expect(200)
+      .then(res => { expect(res.body).toEqual({
+        zipCode: '21000',
+        cityName: 'Dijon',
+        weather: "pluie"
+      }) })
     })
     it('GET weather report by id /cities/:zipCode/weather/:id', async () => {
-        const req = await request(serverTest)
-        .get(`/cities/${zipCode}/weather/${id}`)
-        .expect(200)
-        .then(res => { expect(res.body).toEqual({
-          id: 1,
-          zipCode: '21000',
-	        townName: 'Dijon',
-          weather: "neige"
-        }) })
+      const req = await request(serverTest)
+      .get(`/cities/${zipCode}/weather/${id}`)
+      .expect(200)
+      .then(res => { expect(res.body).toEqual({
+        id: 1,
+        zipCode: '21000',
+        townName: 'Dijon',
+        weather: "pluie"
+      }) })
+    })
+    it('POST city /cities', async () => {
+      const res = await request(serverTest)
+      .post('/cities')
+      .send({
+        name: 'Marseille',
+        zipCode: '13000'
+      })
+      .expect(201)
+      .then(res => { expect(res.body).toEqual( { name: 'Marseille', zipCode: '13000' }) })
+    })
+    it('POST weather report by zipCode /cities/:zipCode/weather', async () => {
+      const req = await request(serverTest)
+      .post(`/cities/${zipCode}/weather`)
+      .send({
+        zipCode: "21000",
+        weather: "neige"
+      })
+      .expect(201)
+      .then(res => {
+        expect(res.body).toEqual({
+          id: 5,
+        })
+      })
     })
     it('PUT city by zipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
@@ -179,4 +201,5 @@ describe('TEST de Stormly', () => {
       .expect(404)
     })
   })
+
 })
