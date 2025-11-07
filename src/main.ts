@@ -47,6 +47,9 @@ server.get("/cities/:zipCode/weather", (req, res) => {
 
   if (!findCity) {
     res.status(404).json({ error: "City not found" });
+    logger.error(
+      `ERROR : City not found ${JSON.stringify(req.params.zipCode)}`,
+    );
     res.end();
   }
 
@@ -56,6 +59,7 @@ server.get("/cities/:zipCode/weather", (req, res) => {
 
   if (findWeatherReports.length < 0) {
     res.status(404).json({ error: "No weather data found" });
+    logger.error(`ERROR : No weather data found `);
     res.end();
   }
 
@@ -95,6 +99,9 @@ server.post("/cities/:zipCode/weather", (req, res) => {
 
   if (!findCity) {
     res.status(404).json({ error: "City not found" });
+    logger.error(
+      `ERROR : City not found ${JSON.stringify(req.params.zipCode)}`,
+    );
     res.end();
   }
 
@@ -117,6 +124,7 @@ server.post("/cities/:zipCode/weather", (req, res) => {
     res.end();
   } else {
     res.status(400).json({ error: "Invalid request body" });
+    logger.error(`ERROR : Invalid request body ${JSON.stringify(req.body)}`);
     res.end();
   }
 });
@@ -128,6 +136,9 @@ server.get("/cities/:zipCode/weather/:weatherId", (req, res) => {
 
   if (!findCity) {
     res.status(404).json({ error: "City not found" });
+    logger.error(
+      `ERROR : City not found ${JSON.stringify(req.params.zipCode)}`,
+    );
     res.end();
   }
 
@@ -137,6 +148,9 @@ server.get("/cities/:zipCode/weather/:weatherId", (req, res) => {
 
   if (!findWeather) {
     res.status(404).json({ error: "Weather not found" });
+    logger.error(
+      `ERROR : Weather not found ${JSON.stringify(req.params.weatherId)}`,
+    );
     res.end();
   }
   logger.info(`1 Weather Report for a city : ${JSON.stringify(findWeather)}`);
@@ -153,6 +167,9 @@ server.get("/weather/:weatherId", (req, res) => {
 
   if (!findWeather) {
     res.status(404).json({ error: "Weather not found" });
+    logger.error(
+      `ERROR : Weather not found ${JSON.stringify(req.params.weatherId)}`,
+    );
     res.end();
   }
   logger.info(`1 Weather Report for a city : ${JSON.stringify(findWeather)}`);
@@ -192,6 +209,7 @@ server.post("/cities", (req, res) => {
     res.end();
   } else {
     res.status(400).json({ error: "Invalid request body" });
+    logger.error(`ERROR : Invalid request body ${JSON.stringify(body)}`);
     res.end();
   }
 });
@@ -216,7 +234,10 @@ server.delete("/cities/:zipCode", (req, res) => {
       `deleted city : ${JSON.stringify({ zipCode: req.params.zipCode, name: cities.name })}`,
     );
   } else {
-    res.status(404).send({ error: "Contact not found" });
+    res.status(404).send({ error: "City not found" });
+    logger.error(
+      `ERROR : City not found ${JSON.stringify(req.params.zipCode)}`,
+    );
   }
 });
 
@@ -238,7 +259,8 @@ server.delete("/weather/:id", (req, res) => {
     });
     logger.info(`weather report deleted: ${JSON.stringify(weather)}`);
   } else {
-    res.status(404).send({ error: "Contact not found" });
+    res.status(404).send({ error: "Weather not found" });
+    logger.error(`ERROR : Weather not found ${JSON.stringify(req.params.id)}`);
   }
 });
 
@@ -259,11 +281,17 @@ server.put("/cities/:zipCode", (req, res) => {
       res
         .status(400)
         .send({ error: "Missing required fields or structure error" });
+      logger.error(
+        `ERROR : Missing required fields or structure error ${JSON.stringify(body)}`,
+      );
       res.end();
       return;
     }
   } else {
     res.status(404).send({ error: "cities not found" });
+    logger.error(
+      `ERROR : City not found ${JSON.stringify(req.params.zipCode)}`,
+    );
   }
 });
 
