@@ -1,5 +1,6 @@
 import express from "express";
 import { cities, weather } from "./storage";
+import logger from "./logger";
 
 const server = express();
 
@@ -18,7 +19,7 @@ function isValidMethod(
 
 server.get("/cities", (req, res) => {
   isValidMethod(req, res, "GET");
-
+  logger.info(`All cities retrived : ${JSON.stringify(cities)}`);
   res.json(cities);
 });
 
@@ -31,7 +32,7 @@ server.get("/cities/:zipCode", (req, res) => {
     res.status(404).json({ error: "City not found" });
     res.end();
   }
-
+  logger.info(`City retrieved : ${JSON.stringify(findCity)}`);
   res.status(200).json(findCity);
 });
 
@@ -78,6 +79,9 @@ server.get("/cities/:zipCode/weather", (req, res) => {
     cityName: findCity?.name,
     weather: weathers[indexMaxScore],
   });
+  logger.info(
+    `Every Weather Report for a city : ${JSON.stringify(req.params.zipCode, findCity.name, weathers[indexMaxScore])}`,
+  );
 });
 
 server.post("/cities/:zipCode/weather", (req, res) => {
@@ -92,23 +96,25 @@ server.post("/cities/:zipCode/weather", (req, res) => {
 
   const body = req.body;
 
-  if(
-    (body?.zipCode && typeof body?.zipCode === 'string') &&
-    (body?.weather && typeof body?.weather === 'string')
-  ){
+  if (
+    body?.zipCode &&
+    typeof body?.zipCode === "string" &&
+    body?.weather &&
+    typeof body?.weather === "string"
+  ) {
     weather.push({
       ...body,
-      id: weather.length
+      id: weather.length,
     });
     res.status(201).json({
       id: weather.length - 1
     });
     res.end();
   } else {
-    res.status(400).json({ error: 'Invalid request body' });
+    res.status(400).json({ error: "Invalid request body" });
     res.end();
   }
-})
+});
 
 server.get("/cities/:zipCode/weather/:weatherId", (req, res) => {
   isValidMethod(req, res, "GET");
@@ -120,42 +126,47 @@ server.get("/cities/:zipCode/weather/:weatherId", (req, res) => {
     res.end();
   }
 
-  let findWeather = weather.find((weather) => weather.id === Number(req.params.weatherId));
+  let findWeather = weather.find(
+    (weather) => weather.id === Number(req.params.weatherId),
+  );
 
   if (!findWeather) {
     res.status(404).json({ error: "Weather not found" });
     res.end();
   }
-
+  logger.info(`1 Weather Report for a city : ${JSON.stringify(findWeather)}`);
   res.status(200).json(findWeather);
   res.end();
-
-})
+});
 
 server.get("/weather/:weatherId", (req, res) => {
   isValidMethod(req, res, "GET");
 
-  let findWeather = weather.find((weather) => weather.id === Number(req.params.weatherId));
+  let findWeather = weather.find(
+    (weather) => weather.id === Number(req.params.weatherId),
+  );
 
   if (!findWeather) {
     res.status(404).json({ error: "Weather not found" });
     res.end();
   }
-
+  logger.info(`1 Weather Report for a city : ${JSON.stringify(findWeather)}`);
   res.status(200).json(findWeather);
   res.end();
-
-})
+});
 
 server.get("/weather", (req, res) => {
-
   const weatherResult = weather;
 
   for (let i = 0; i < weatherResult.length; i++) {
-    let findCity = cities.find((city) => city.zipCode === weatherResult[i].zipCode);
+    let findCity = cities.find(
+      (city) => city.zipCode === weatherResult[i].zipCode,
+    );
     weatherResult[i]["townName"] = findCity?.name;
   }
-
+  logger.info(
+    `Returns every weather for every city ${JSON.stringify(weather)}`,
+  );
   res.status(200).json(weather);
 });
 
