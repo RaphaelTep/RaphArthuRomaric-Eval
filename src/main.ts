@@ -13,6 +13,7 @@ function isValidMethod(
 ) {
   if (req.method !== method) {
     res.status(405).json({ error: "Method not allowed" });
+    logger.error(`ERROR : Method not allowed ${JSON.stringify(req)}`);
     res.end();
   }
 }
@@ -30,6 +31,7 @@ server.get("/cities/:zipCode", (req, res) => {
 
   if (!findCity) {
     res.status(404).json({ error: "City not found" });
+    logger.error(`ERROR : City not found ${JSON.stringify(cities.zipCode)}`);
     res.end();
   }
   logger.info(`City retrieved : ${JSON.stringify(findCity)}`);
@@ -232,8 +234,7 @@ server.delete("/weather/:id", (req, res) => {
     res.status(200).send({
       status: "success",
     });
-    logger.info(`weather report deleted: ${JSON.stringify(weather)}
-
+    logger.info(`weather report deleted: ${JSON.stringify(weather)}`);
   } else {
     res.status(404).send({ error: "Contact not found" });
   }
