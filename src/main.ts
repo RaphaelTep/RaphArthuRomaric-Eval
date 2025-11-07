@@ -31,7 +31,9 @@ server.get("/cities/:zipCode", (req, res) => {
 
   if (!findCity) {
     res.status(404).json({ error: "City not found" });
-    logger.error(`ERROR : City not found ${JSON.stringify(cities.zipCode)}`);
+    logger.error(
+      `ERROR : City not found ${JSON.stringify(req.params.zipCode)}`,
+    );
     res.end();
   }
   logger.info(`City retrieved : ${JSON.stringify(findCity)}`);
