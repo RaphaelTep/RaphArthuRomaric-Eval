@@ -38,6 +38,7 @@ Content-Type: application/json
 
 POST {{BASE_URL}}/cities/{{ZIP_CODE}}/weather
 Content-Type: application/json
+
 {
     "zipCode": "21000",
     "weather": "neige"
@@ -47,8 +48,10 @@ Content-Type: application/json
 
 PUT {{BASE_URL}}/cities/{{ZIP_CODE}}
 Content-Type: application/json
+
 {
-   "name": "Dij",
+   "zipCode": "21000",
+    "name": "Dij"
 }
 
 ###
