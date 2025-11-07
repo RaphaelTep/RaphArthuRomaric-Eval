@@ -243,18 +243,18 @@ server.delete("/weather/:id", (req, res) => {
 });
 
 server.put("/cities/:zipCode", (req, res) => {
-  const index = cities.findIndex((t) => t.zipCode === req.params.zipCode);
+  let findCity = cities.find((city) => city.zipCode === req.params.zipCode);
   const body = req.body;
   isValidMethod(req, res, "PUT");
 
-  if (index !== -1 && Number(req.params.zipCode) < cities.length) {
+  if (findCity) {
     if (body?.name && typeof body?.name === "string") {
-      cities[index] = {
+      findCity = {
         zipCode: req.params.zipCode,
         name: req.body.name,
       };
       logger.info(`City edited: ${JSON.stringify(body)}`);
-      res.status(201).json(cities[index]);
+      res.status(201).json(findCity);
     } else {
       res
         .status(400)

@@ -82,10 +82,12 @@ describe('TEST de Stormly', () => {
     })
     it('PUT city by zipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
-      .post(`/cities/${zipCode}`)
-      .send(updateCity)
+      .put(`/cities/${zipCode}`)
+      .send({
+        name: 'Dij',
+      })
       .expect(201)
-      .then(res => { expect(res.body).toEqual({ zipCode: "21000", name: "Dijon" }) })
+      .then(res => { expect(res.body).toEqual({ zipCode: "21000", name: "Dij" }) })
     })
     it('DELETE cities by zipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
