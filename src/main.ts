@@ -57,7 +57,7 @@ server.get("/cities/:zipCode/weather", (req, res) => {
     (item) => item.zipCode === req.params.zipCode,
   );
 
-  if (findWeatherReports.length < 0) {
+  if (findWeatherReports.length <= 0) {
     res.status(404).json({ error: "No weather data found" });
     logger.error(`ERROR : No weather data found `);
     res.end();
