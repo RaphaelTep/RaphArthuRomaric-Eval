@@ -132,7 +132,7 @@ describe('TEST de Stormly', () => {
       const req = await request(serverTest)
       .get(`/cities/${wrongZipCode}/weather/${id}`)
       .expect(404)
-      .then(res => { expect(res).toEqual({ error: "City not found" }) })})
+      .then(res => { expect(res.body).toEqual({ error: "City not found" }) })})
     it('GET weather report by wrongId /cities/:zipCode/weather/:id', async () => {
       const req = await request(serverTest)
       .get(`/cities/${zipCode}/weather/${wrongId}`)
