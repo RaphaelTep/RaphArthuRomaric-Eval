@@ -156,10 +156,10 @@ describe('TEST de Stormly', () => {
       .then(res => { expect(res.body).toEqual({ error: 'Invalid request body' }) })})
     it('PUT city by wrongZipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
-      .post(`/cities/${wrongZipCode}`)
+      .put(`/cities/${wrongZipCode}`)
       .send(updateCity)
       .expect(404)
-      .then(res => { expect(res).toEqual({ error: "cities not found" }) })
+      .then(res => { expect(res.body).toEqual({ error: "cities not found" }) })
     })
     it('PUT wrongUpdateCity by zipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
