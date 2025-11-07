@@ -1,0 +1,61 @@
+@BASE_URL = http://localhost:3000
+@ZIP_CODE = 21000
+@WEATHER_ID = 1
+
+GET {{BASE_URL}}/cities
+
+###
+
+GET {{BASE_URL}}/weather
+
+###
+
+GET {{BASE_URL}}/cities/{{ZIP_CODE}}
+
+###
+
+GET {{BASE_URL}}/weather/{{WEATHER_ID}}
+
+###
+
+GET {{BASE_URL}}/cities/{{ZIP_CODE}}/weather
+
+###
+
+GET {{BASE_URL}}/cities/{{ZIP_CODE}}/weather/{{WEATHER_ID}}
+
+###
+
+POST {{BASE_URL}}/cities
+
+{
+    "name": "Marseille",
+    "zipCode": "13000"
+}
+
+###
+
+POST {{BASE_URL}}/cities/{{ZIP_CODE}}/weather
+
+{
+    "zipCode": "21000",
+    "weather": "neige"
+}
+
+###
+
+PUT {{BASE_URL}}/cities/{{ZIP_CODE}}
+
+{
+   "name": "Dij",
+}
+
+###
+
+DELETE {{BASE_URL}}/cities/{{ZIP_CODE}}
+
+###
+
+DELETE {{BASE_URL}}/weather/{{WEATHER_ID}}
+
+###
