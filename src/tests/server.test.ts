@@ -200,6 +200,17 @@ describe('TEST de Stormly', () => {
       .get(`/weather/${wrongId}`)
       .expect(404)
     })
+
+    it('POST city with already existing zipCode /cities', async () => {
+      const req = await request(serverTest)
+      .post(`/cities`)
+      .send({
+        name: 'Dijon',
+        zipCode: '21000'
+      })
+      .expect(409)
+      .then(res => { expect(res.body).toEqual({ error: "City already exists" }) })
+    })
   })
 
 })

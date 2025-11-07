@@ -197,6 +197,14 @@ server.post("/cities", (req, res) => {
 
   const body = req.body;
 
+  let findCity = cities.find((city) => city.zipCode === body?.zipCode);
+
+  if(findCity){
+    res.status(409).json({ error: "City already exists" });
+    logger.error(`ERROR : City already exists ${JSON.stringify(body)}`);
+    res.end();
+  }
+
   if (
     body?.zipCode &&
     typeof body?.zipCode === "string" &&
