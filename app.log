@@ -357,3 +357,4 @@
 {"level":50,"time":"2025-11-07T10:49:39.610Z","pid":12932,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : Missing required fields or structure error {\"name\":\"\",\"zipCode\":\"21000\"}"}
 {"level":50,"time":"2025-11-07T10:49:39.613Z","pid":12932,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
 {"level":30,"time":"2025-11-07T10:49:39.613Z","pid":12932,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":30,"time":"2025-11-07T10:54:06.515Z","pid":12032,"hostname":"DESKTOP-E1CC9PA","msg":"New city added : {\"name\":\"Marseille\",\"zipCode\":\"13000\"}"}
