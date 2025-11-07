@@ -358,3 +358,34 @@
 {"level":50,"time":"2025-11-07T10:49:39.613Z","pid":12932,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
 {"level":30,"time":"2025-11-07T10:49:39.613Z","pid":12932,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
 {"level":30,"time":"2025-11-07T10:54:06.515Z","pid":12032,"hostname":"DESKTOP-E1CC9PA","msg":"New city added : {\"name\":\"Marseille\",\"zipCode\":\"13000\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.383Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"All cities retrived : [{\"name\":\"Dijon\",\"zipCode\":\"21000\"},{\"name\":\"Besançon\",\"zipCode\":\"25000\"},{\"name\":\"Paris\",\"zipCode\":\"75001\"},{\"name\":\"Coda town\",\"zipCode\":\"99999\"}]"}
+{"level":30,"time":"2025-11-07T11:09:39.394Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.398Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"Returns every weather for every city [{\"id\":0,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"},{\"id\":2,\"zipCode\":\"21000\",\"weather\":\"beau\",\"townName\":\"Dijon\"},{\"id\":3,\"zipCode\":\"21000\",\"weather\":\"neige\",\"townName\":\"Dijon\"},{\"id\":4,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}]"}
+{"level":30,"time":"2025-11-07T11:09:39.403Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.407Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"Every Weather Report for a city : \"21000\""}
+{"level":30,"time":"2025-11-07T11:09:39.411Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.429Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"New city added : {\"name\":\"Marseille\",\"zipCode\":\"13000\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.433Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"New weather report added : {\"zipCode\":\"21000\",\"weather\":\"neige\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.437Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"City edited: {\"name\":\"Dij\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.441Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
+{"level":30,"time":"2025-11-07T11:09:39.444Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":50,"time":"2025-11-07T11:09:39.448Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
+{"level":30,"time":"2025-11-07T11:09:39.448Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":50,"time":"2025-11-07T11:09:39.451Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : Weather not found \"-99\""}
+{"level":30,"time":"2025-11-07T11:09:39.451Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":50,"time":"2025-11-07T11:09:39.454Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
+{"level":50,"time":"2025-11-07T11:09:39.458Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : No weather data found "}
+{"level":50,"time":"2025-11-07T11:09:39.461Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
+{"level":30,"time":"2025-11-07T11:09:39.461Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : {\"id\":1,\"zipCode\":\"21000\",\"weather\":\"pluie\",\"townName\":\"Dijon\"}"}
+{"level":50,"time":"2025-11-07T11:09:39.464Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : Weather not found \"-99\""}
+{"level":30,"time":"2025-11-07T11:09:39.464Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":50,"time":"2025-11-07T11:09:39.467Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : Invalid request body [{\"name\":\"Coda town\",\"zipCode\":\" \"}]"}
+{"level":50,"time":"2025-11-07T11:09:39.470Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
+{"level":50,"time":"2025-11-07T11:09:39.473Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : Invalid request body [{\"zipCode\":\" \",\"weather\":\" \",\"id\":9999999}]"}
+{"level":50,"time":"2025-11-07T11:09:39.476Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
+{"level":50,"time":"2025-11-07T11:09:39.479Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : Missing required fields or structure error {\"name\":\"\",\"zipCode\":\"21000\"}"}
+{"level":50,"time":"2025-11-07T11:09:39.482Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City not found \"09\""}
+{"level":30,"time":"2025-11-07T11:09:39.482Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"City retrieved : undefined"}
+{"level":50,"time":"2025-11-07T11:09:39.484Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : Weather not found \"-99\""}
+{"level":30,"time":"2025-11-07T11:09:39.484Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"1 Weather Report for a city : undefined"}
+{"level":50,"time":"2025-11-07T11:09:39.487Z","pid":2952,"hostname":"DESKTOP-E1CC9PA","msg":"ERROR : City already exists {\"name\":\"Dijon\",\"zipCode\":\"21000\"}"}
