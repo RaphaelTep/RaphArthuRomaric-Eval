@@ -163,10 +163,10 @@ describe('TEST de Stormly', () => {
     })
     it('PUT wrongUpdateCity by zipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
-      .post(`/cities/${zipCode}`)
+      .put(`/cities/${zipCode}`)
       .send(wrongUpdateCity)
       .expect(400)
-      .then(res => { expect(res).toEqual({ error: "Missing required fields or structure error" }) })
+      .then(res => { expect(res.body).toEqual({ error: "Missing required fields or structure error" }) })
     })
     it('DELETE cities by wrongZipCode /cities/:zipCode', async () => {
       const req = await request(serverTest)
