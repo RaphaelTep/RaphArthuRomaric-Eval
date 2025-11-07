@@ -150,7 +150,7 @@ describe('TEST de Stormly', () => {
       .post(`/cities/${wrongZipCode}/weather`)
       .send(newWeather)
       .expect(404)
-      .then(res => { expect(res).toEqual({ error: "City not found" }) })})
+      .then(res => { expect(res.body).toEqual({ error: "City not found" }) })})
     it('POST wrongNewWeather report by zipCode /cities/:zipCode/weather', async () => {
       const req = await request(serverTest)
       .post(`/cities/${zipCode}/weather`)
