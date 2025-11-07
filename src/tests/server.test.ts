@@ -179,7 +179,7 @@ describe('TEST de Stormly', () => {
     it('DELETE weather by wrongId /weather/:id', async () => {
       const req = await request(serverTest)
       .get(`/weather/${wrongId}`)
-      .expect(204)
+      .expect(404)
     })
   })
 })
