@@ -149,6 +149,14 @@ server.get("/weather/:weatherId", (req, res) => {
 })
 
 server.get("/weather", (req, res) => {
+
+  const weatherResult = weather;
+
+  for (let i = 0; i < weatherResult.length; i++) {
+    let findCity = cities.find((city) => city.zipCode === weatherResult[i].zipCode);
+    weatherResult[i]["townName"] = findCity?.name;
+  }
+
   res.status(200).json(weather);
 });
 

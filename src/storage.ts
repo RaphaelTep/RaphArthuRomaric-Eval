@@ -9,6 +9,7 @@ interface Weather {
   zipCode: string;
   weather: string;
   id: number;
+  townName?: string;
 }
 
 let cities: City[] = [
@@ -30,7 +31,7 @@ let weather: Weather[] = [
   {
     id: 0,
     zipCode: "21000",
-    weather: "pluie",
+    weather: "pluie"
   },
   {
     id: 1,
